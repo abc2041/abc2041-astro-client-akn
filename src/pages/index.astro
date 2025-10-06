@@ -1,5 +1,7 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import "@fontsource/montserrat";
+import "../styles/global.css";
+import MainLayout from "../layouts/MainLayout.astro";
 ---
 
 <html lang="en">
@@ -10,7 +12,7 @@ import Layout from "../layouts/Layout.astro";
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
-	<body>
-		<Layout />
+	<body class="bg-back">
+		<MainLayout />
 	</body>
 </html>
